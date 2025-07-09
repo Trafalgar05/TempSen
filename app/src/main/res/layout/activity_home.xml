@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient_blue"
+    android:padding="32dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:layout_width="134dp"
+            android:layout_height="135dp"
+            android:src="@drawable/ic_weather"
+            app:tint="@color/colorAccent" />
+
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:letterSpacing="0.05"
+            android:text="TempSen"
+            android:textColor="@color/textColorPrimary"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/subtitleText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:gravity="center"
+            android:lineSpacingExtra="4dp"
+            android:text="Suivi météorologique du sénégal\npar région"
+            android:textColor="@color/textColorSecondary"
+            android:textSize="16sp"/>
+
+        <Button
+            android:id="@+id/btnVoirRegions"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="48dp"
+            android:background="@drawable/bg_button_blue"
+            android:drawableStart="@drawable/ic_map"
+            android:drawablePadding="12dp"
+            android:drawableTint="@color/textColorPrimary"
+            android:elevation="4dp"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center|start"
+            android:paddingStart="24dp"
+            android:text="Explorer les régions"
+            android:textAllCaps="false"
+            android:textColor="@color/textColorPrimary"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:text="© 2025 TempSen"
+        android:textColor="@color/textColorSecondary"
+        android:textSize="12sp"/>
+</RelativeLayout>
